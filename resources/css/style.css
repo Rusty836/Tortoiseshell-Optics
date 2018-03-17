@@ -64,6 +64,17 @@ nav li {
 	display: none;
 }
 
+@media only screen and (max-width: 768px) {
+	.menu ul {
+		display: none;
+	}
+
+	.menu ul.mobile-menu {
+		display: block;
+		text-align: center;
+	}
+}
+
 header .flex {
 	justify-content: flex-end;
 }
@@ -76,8 +87,27 @@ header .flex {
 	background-color :white;
 	margin-top: 10rem;
 	margin-right: -2rem;
+}
 
+@media only screen and (max-width: 1024px) {
 
+	header {
+		height: 22rem;
+		padding-top: 0;
+	}
+	
+	nav.container {
+		max-width: 100%;
+	}
+	.main-banner {
+		padding: 0.75rem 4rem;
+		margin-top: 5rem;
+		margin-right: 2rem;
+	}
+
+	.main-banner h1 {
+		font-size: 1.33rem;
+	}
 }
 
 
